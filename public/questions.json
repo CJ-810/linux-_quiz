@@ -41,7 +41,7 @@
   { "question": "What command would you use to change to your home directory?", "options": ["cd /home/username", "cd", "cd ~", "cd userhome"], "answer": 2 },
   { "question": "Where are the device drivers stored in Linux?", "options": ["/dev", "/lib", "/sys", "/boot"], "answer": 1 },
   { "question": "What command displays all users who logged in and out?", "options": ["last", "w", "log", "who"], "answer": 0 },
-  { "question": "How can you set a process's priority in Linux?", "options": ["priority", "nice", "renice", "top"], "answer": 2 },
+  { "question": "How can you set a process's priority in Linux?", "options": ["priority", "nice", "renice", "top"], "answer": 1 },
   { "question": "What command queries domain name servers?", "options": ["nslookup", "History", "ping", "seek"], "answer": 0 },
   { "question": "What is the administrator known as in Linux?", "options": ["root", "admin", "standard user", "supeuser"], "answer": 0 },
   { "question": "Which file would you edit to change the hostname of a Linux system?", "options": ["/etc/hostname.conf", "/etc/hostname", "/etc/fstab", "/etc/passwd"], "answer": 1 },
