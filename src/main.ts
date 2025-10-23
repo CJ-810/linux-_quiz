@@ -91,10 +91,10 @@ function showResult() {
   const percent = Math.round((score / questions.length) * 100);
   let remark = "";
 
-  if (percent >= 90) remark = "🌟 Excellent! You're a Linux master.";
-  else if (percent >= 75) remark = "💪 Great job! Keep it up.";
+  if (percent >= 100) remark = "🌟 Excellent! You're a Linux master.";
+  else if (percent >= 80) remark = "💪 Great job! you passed.";
   else if (percent >= 50) remark = "👍 Not bad — some review needed.";
-  else remark = "📘 Keep practicing — you’ll get there!";
+  else remark = "💀 your cooked";
 
   app.innerHTML = `
     <div class="quiz result">
