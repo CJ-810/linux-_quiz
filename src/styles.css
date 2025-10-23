@@ -96,3 +96,59 @@ button:active {
     transform: translateY(0);
   }
 }
+
+/* === FEEDBACK COLORS === */
+.option-btn.correct {
+  background-color: #16a34a !important; /* green */
+  color: #fff;
+  border: 2px solid #22c55e;
+}
+
+.option-btn.wrong {
+  background-color: #dc2626 !important; /* red */
+  color: #fff;
+  border: 2px solid #ef4444;
+}
+
+.option-btn:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+/* === ADDITIONAL SPACING === */
+.question {
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* spacing between buttons */
+  margin-bottom: 1.5rem;
+}
+
+.next-container {
+  margin-top: 1.2rem;
+}
+
+.feedback {
+  margin: 1rem 0;
+  color: #fbbf24;
+  font-size: 1rem;
+}
+
+.next-btn {
+  background: var(--accent);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.next-btn:hover {
+  background: var(--accent-hover);
+}
