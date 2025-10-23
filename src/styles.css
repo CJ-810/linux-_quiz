@@ -1,0 +1,98 @@
+/* === GLOBAL STYLES === */
+:root {
+  --bg-color: #0e1117;
+  --card-bg: #1c1f26;
+  --accent: #4f8cff;
+  --accent-hover: #70a3ff;
+  --text-color: #f1f1f1;
+  --muted: #9ca3af;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text-color);
+}
+
+/* === QUIZ CONTAINER === */
+.quiz {
+  background: var(--card-bg);
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 550px;
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+
+.quiz h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.quiz p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* === BUTTONS === */
+button {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  background: var(--accent);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+/* === PROGRESS & RESULT === */
+.progress {
+  color: var(--muted);
+  margin-top: 1rem;
+}
+
+.result {
+  animation: fadeIn 0.5s ease;
+}
+
+.remark {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
