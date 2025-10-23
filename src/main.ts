@@ -1,5 +1,5 @@
 import type { Question } from "./types.d.ts";
-import "./style.css";
+import "./styles.css";
 
 let current = 0;
 let score = 0;
